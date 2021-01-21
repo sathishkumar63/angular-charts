@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ChartsComponent } from './containers';
+import { ManageChartsComponent } from './containers';
 import {
   BarChartComponent,
   BubbleChartComponent,
@@ -13,9 +13,9 @@ import {
 const routes: Routes = [
   {
     path: '',
-    component: ChartsComponent,
+    component: ManageChartsComponent,
     children: [
-      { path: '', redirectTo: '/line-chart', pathMatch: 'full' },
+      { path: '', component: BarChartComponent },
       { path: 'line-chart', component: LineChartComponent },
       { path: 'bar-chart', component: BarChartComponent },
       { path: 'bubble-chart', component: BubbleChartComponent },
@@ -31,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ChartsRoutingModule {}
+export class ManageChartsRoutingModule {}

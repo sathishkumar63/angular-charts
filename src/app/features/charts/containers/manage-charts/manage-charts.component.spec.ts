@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ManageChartsComponent } from './manage-charts.component';
 
-import { ChartsComponent } from './charts.component';
-
-describe('ChartsComponent', () => {
-  let component: ChartsComponent;
-  let fixture: ComponentFixture<ChartsComponent>;
+describe('ManageChartsComponent', () => {
+  let component: ManageChartsComponent;
+  let fixture: ComponentFixture<ManageChartsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ChartsComponent ]
+      declarations: [ ManageChartsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChartsComponent);
+    fixture = TestBed.createComponent(ManageChartsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

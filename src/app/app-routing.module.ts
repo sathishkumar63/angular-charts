@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: 'charts',
     loadChildren: () =>
-      import('./features/charts/charts.module').then((m) => m.ChartsModule),
+      import('./features/charts/manage-charts.module').then((m) => m.ManageChartsModule),
   },
   { path: '**', redirectTo: '/charts', pathMatch: 'full' },
 ];

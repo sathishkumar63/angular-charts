@@ -1,1 +1,1 @@
-export * from './charts/charts.component';
+export * from './manage-charts/manage-charts.component';

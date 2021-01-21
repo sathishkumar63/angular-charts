@@ -1,1 +1,14 @@
-<p>doughnut-chart works!</p>
+<mat-card>
+  <mat-card-content>
+    <canvas
+      baseChart
+      [data]="doughnutChartData"
+      [labels]="doughnutChartLabels"
+      [options]="doughnutChartOptions"
+      [colors]="doughnutChartColors"
+      [legend]="doughnutChartLegend"
+      [chartType]="doughnutChartType"
+    >
+    </canvas>
+  </mat-card-content>
+</mat-card>

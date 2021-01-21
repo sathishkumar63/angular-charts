@@ -1,1 +1,12 @@
-<p>radar-chart works!</p>
+<mat-card>
+  <mat-card-content>
+    <canvas
+      baseChart
+      [datasets]="radarChartData"
+      [options]="radarChartOptions"
+      [labels]="radarChartLabels"
+      [chartType]="radarChartType"
+    >
+    </canvas>
+  </mat-card-content>
+</mat-card>
