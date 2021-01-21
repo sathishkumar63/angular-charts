@@ -1,1 +1,13 @@
-<p>pie-chart works!</p>
+<mat-card>
+  <mat-card-content>
+    <canvas
+      baseChart
+      [data]="pieChartData"
+      [labels]="pieChartLabels"
+      [options]="pieChartOptions"
+      [chartType]="pieChartType"
+      [colors]="pieChartColors"
+      [legend]="pieChartLegend"
+    ></canvas>
+  </mat-card-content>
+</mat-card>

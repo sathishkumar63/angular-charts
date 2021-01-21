@@ -1,1 +1,15 @@
-<p>line-chart works!</p>
+<mat-card>
+  <mat-card-content>
+    <canvas
+      baseChart
+      [datasets]="lineChartData"
+      [labels]="lineChartLabels"
+      [options]="lineChartOptions"
+      [colors]="lineChartColors"
+      [legend]="lineChartLegend"
+      [chartType]="lineChartType"
+      [plugins]="lineChartPlugins"
+    >
+    </canvas>
+  </mat-card-content>
+</mat-card>

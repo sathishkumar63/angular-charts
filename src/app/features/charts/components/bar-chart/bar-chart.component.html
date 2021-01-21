@@ -1,1 +1,15 @@
-<p>bar-chart works!</p>
+<mat-card>
+  <mat-card-content>
+    <canvas
+      baseChart
+      [datasets]="barChartData"
+      [labels]="barChartLabels"
+      [options]="barChartOptions"
+      [colors]="barChartColors"
+      [plugins]="barChartPlugins"
+      [legend]="barChartLegend"
+      [chartType]="barChartType"
+    >
+    </canvas>
+  </mat-card-content>
+</mat-card>
